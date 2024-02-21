@@ -4,6 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import Image from "next/image";
 import mfavatar from "../../../public/side.svg";
 
+
 const Hero = () => {
   return (
     <section>
@@ -28,18 +29,20 @@ const Hero = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          Welcome to my world of creativity, where innovative solutions come to life. Explore my portfolio! 
+            Welcome to my world of creativity, where innovative solutions come
+            to life. Explore my portfolio!
           </p>
           <div>
             <a href="#contact">
-              
-            <button className="px-6 py-3 rounded-full mr-4 bg-white hover:bg-slate-200 text-black">
-              Hire me
-            </button>
+              <button className="px-6 py-3 rounded-full mr-4 bg-white hover:bg-slate-200 text-black">
+                Hire me
+              </button>
             </a>
-            <button className="px-6 py-3 rounded-full mr-4 bg-transparent hover:bg-slate-800 text-white border   border-white mt-3">
-              Download CV
-            </button>
+            <a href="" target="_blank" download>
+              <button className="px-6 py-3 rounded-full mr-4 bg-transparent hover:bg-slate-800 text-white border   border-white mt-3">
+                Download CV
+              </button>
+            </a>
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">

@@ -9,7 +9,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className= "list-disc pl-2">
+      <ul className="list-disc pl-2">
         <li>Node.js</li>
         <li>Expressjs</li>
         <li>Javascript</li>
@@ -51,7 +51,7 @@ const TAB_DATA = [
             <li></li>
             <li></li>
             <li></li>
-            </ul>
+          </ul>
         </li>
       </ul>
     ),
@@ -69,14 +69,15 @@ const About = () => {
   return (
     <section id="about" className="text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src={about} width={500} height={500} className="rounded-lg"/>
+        <Image src={about} width={500} height={500} className="rounded-lg" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me </h2>
           <p className="text-base md:text-lg">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience with
-            JavaScript, React, Redux, Node.js, Express, HTML, CSS, Git. I am
-            a quick learner and I am always looking to expand my knowledge and
+            JavaScript, React, Redux, Node.js, Express, HTML, CSS, Git and other
+            important technologies required to solve technical problems. I am a
+            quick learner and I am always looking to expand my knowledge and
             skill set. I am a team player and I am excited to work with others
             to create amazing applications.
           </p>
