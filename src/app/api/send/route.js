@@ -12,7 +12,7 @@ export async function POST(req, res) {
   console.log(email, subject, message);
   try {
     const data = await resend.emails.send({
-      from: fromEmail,
+      from: "onboarding@resend.dev",
       to: ["toyejeremiah@gmail.com", email],
       subject: subject,
       react: (
