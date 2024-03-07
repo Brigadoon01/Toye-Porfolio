@@ -2,7 +2,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import Image from "next/image";
-import mfavatar from "../../../public/side.svg";
+import mfavatar from "../../../public/img.jpg";
 
 
 const Hero = () => {
@@ -51,8 +51,9 @@ const Hero = () => {
               src={mfavatar}
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
               alt="hero image"
-              width={300}
-              height={300}
+              width={500}
+              height={500}
+              style={{borderRadius: "50%"}}
             />
           </div>
         </div>
