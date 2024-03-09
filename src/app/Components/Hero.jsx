@@ -38,7 +38,7 @@ const Hero = () => {
                 Hire me
               </button>
             </a>
-            <a href="" target="_blank" download>
+            <a href="./resume.pdf" target="_blank" download rel="noopener nonreferrer">
               <button className="px-6 py-3 rounded-full mr-4 bg-transparent hover:bg-slate-800 text-white border   border-white mt-3">
                 Download CV
               </button>
@@ -51,8 +51,8 @@ const Hero = () => {
               src={mfavatar}
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
               alt="hero image"
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               style={{borderRadius: "50%"}}
             />
           </div>
