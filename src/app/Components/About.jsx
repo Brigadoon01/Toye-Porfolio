@@ -46,12 +46,11 @@ const TAB_DATA = [
         <li>
           FrontEnd Developer (June - October, 2023) :
           <br />
-          Odeeble
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+          Odeeble.
+        </li>
+        <li>Software Engineer (September, 2020 - Present) :
+          <br />
+          Freelance.
         </li>
       </ul>
     ),
