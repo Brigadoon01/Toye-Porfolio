@@ -4,6 +4,7 @@ import Image from "next/image";
 import about from "../../../public/about-image.png";
 import TabBtn from "./TabBtn";
 import {motion} from "framer-motion";
+import {fadeIn} from "../../app/utils/variants"
 
 
 
@@ -72,17 +73,17 @@ const About = () => {
     <section id="about" className="text-white h-[100%]">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <motion.div 
-        initial={{ y: "-100%", opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8}}
+        variants={fadeIn("down",0.2 )}
+        initial="hidden"
+        whileInView={"show"}
         >
 
         <Image src={about} width={500} height={500} className="rounded-lg" />
         </motion.div>
         <motion.div
-        initial={{ x: "100%", opacity: 0  }}
-        animate={{ x: 0,opacity: 1 }}
-        transition={{ duration: 0.8}}
+        variants={fadeIn("left",0.2 )}
+        initial="hidden"
+        whileInView={"show"}
         className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me </h2>
           <p className="text-base md:text-lg">

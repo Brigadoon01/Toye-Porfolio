@@ -3,6 +3,8 @@ import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
+import {projectsAnimation} from "../../app/utils/variants";
+
 
 const projectsData = [
   {
@@ -73,6 +75,7 @@ const Projects = () => {
   const filteredProjects = projectsData.filter((project) =>
     project.tag.includes(tag)
   );
+  
 
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
@@ -81,11 +84,15 @@ const Projects = () => {
 
   return (
     <section id="project">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+      <motion.h2 
+      variants={projectsAnimation("up",0.2 )}
+      initial="hidden"
+  whileInView={"show"}
+      className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
-      </h2>
+      </motion.h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTag
+        < ProjectTag
           onClick={handleTagChange}
           name="All"
           isSelected={tag === "All"}

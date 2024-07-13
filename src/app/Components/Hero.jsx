@@ -4,20 +4,17 @@ import { TypeAnimation } from "react-type-animation";
 import Image from "next/image";
 import mfavatar from "../../../public/img.jpg";
 import { motion } from "framer-motion";
+import {fadeIn} from "../../app/utils/variants"
 
-// const variants = {
-//   init: {x: "-100%", opacity: 0 },
-//   animate: {}
-// }
 
 const Hero = () => {
   return (
     <section className="h-[100vh] md:h-[100vh]">
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <motion.div
-          initial={{ x: "-100%", opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8}}
+          variants={fadeIn("right",0.2 )}
+          initial="hidden"
+          whileInView={"show"}
           className="col-span-7 place-self-center text-center sm:text-left">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
             <span> Hello, I&apos;m </span>
@@ -61,9 +58,9 @@ const Hero = () => {
           </div>
         </motion.div>
         <motion.div
-          initial={{ y: "100%", opacity: 0  }}
-          animate={{ y: 0,opacity: 1 }}
-          transition={{ duration: 0.8}}
+          variants={fadeIn("up",0.2 )}
+          initial="hidden"
+          whileInView={"show"}
           className="col-span-5 place-self-center mt-4 lg:mt-0">
           <div className=" rounded-full bg-[#181818] w-[400px] h-[400px] lg:w-[500px] lg:h-[500px] relative">
             <Image
